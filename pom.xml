@@ -3,8 +3,8 @@
 
   <modelVersion>4.0.0</modelVersion> 
 
-  <groupId>com.example.maven-project</groupId>
-  <artifactId>maven-project</artifactId>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-clean-plugin</artifactId>
   <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>Maven Project</name>
@@ -38,14 +38,6 @@
           <target>1.6</target>
         </configuration>
       </plugin>
-             
-   <plugins>
-    <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-clean-plugin</artifactId>
-      <version>2.4</version>
-    </plugin>
-  </plugins>
          
       <plugin>
         <artifactId>maven-release-plugin</artifactId>
@@ -120,10 +112,11 @@
           <version>2.6</version>
         </plugin>
 
-        <plugin>
-          <artifactId>maven-project-info-reports-plugin</artifactId>
-          <version>2.4</version>
-        </plugin>
+               
+    <plugin>
+      <artifactId>maven-clean-plugin</artifactId>
+      <version>2.4</version>
+    </plugin>        
 
         <plugin>
           <artifactId>maven-release-plugin</artifactId>
